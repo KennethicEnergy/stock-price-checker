@@ -36,7 +36,7 @@ Ensure that you have the following installed:
 
 2. Install the dependencies:
   ```bash
-  npm install```
+    npm install```
 
 3. Create a .env file in the root directory and add your Finnhub API key
 
