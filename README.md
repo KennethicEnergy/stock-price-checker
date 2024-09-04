@@ -32,17 +32,17 @@ Ensure that you have the following installed:
 
    ```bash
    git@github.com:KennethicEnergy/stock-price-checker.git
-   cd stock-price-checker```
+   cd stock-price-checker
 
 2. Install the dependencies:
   ```bash
-   npm install```
+   npm install
 
 3. Create a .env file in the root directory and add your Finnhub API key
 
 4. Running the Application
   ```bash
-   npm start```
+   npm start
 
 # Usage
   1. Enter a valid stock symbol (e.g., AAPL, TSLA) in the input field.
@@ -72,8 +72,8 @@ Ensure that you have the following installed:
   - The **Loading...** message is shown while the app is fetching data from the API.
 
 # Contributing
-Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
+  Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
 
 # License
-This project is licensed under the MIT License. 
+  This project is licensed under the MIT License. 
 
