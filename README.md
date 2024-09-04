@@ -54,10 +54,10 @@ Ensure that you have the following installed:
 
 # Project Structure
   - `src/`: Contains all the source code.
-    - **App.tsx**: The main component of the application.
-    - **api.ts**: Contains the functions for validating symbols and fetching stock prices.
-    - **types.ts**: TypeScript interfaces and types used in the application.
-    - **index.css**: Styling for the application.
+    - App.tsx`: The main component of the application.
+    - `api.ts`: Contains the functions for validating symbols and fetching stock prices.
+    - `types.ts`: TypeScript interfaces and types used in the application.
+    - `index.css`: Styling for the application.
 
 # API Integration
   This application uses the Finnhub API to:
@@ -72,7 +72,7 @@ Ensure that you have the following installed:
 # Styling
   - The app uses basic CSS for styling.
   - Errors are highlighted by applying a red border around the input field.
-  - The **Loading...** message is shown while the app is fetching data from the API.
+  - The `Loading...` message is shown while the app is fetching data from the API.
 
 # Contributing
   Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
