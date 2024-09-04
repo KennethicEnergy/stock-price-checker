@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  background: #696969;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+form {
+  padding: 8px;
+  height: 300px;
+  width: 500px;  
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.container {
+  display: flex;
+  gap: 8px;
+}
+
+.input-field, .submit-btn {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-btn {
+  background: rgb(28, 139, 28);
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  animation: press 0.8s;
+}
+
+.submit-btn:disabled {
+  background: #d8d8d8;
+  cursor: not-allowed;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.err-msg {
+  color: red;
 }

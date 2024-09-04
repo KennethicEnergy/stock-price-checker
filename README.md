@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Stock Price Checker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application that allows users to check the current stock price by entering a stock symbol. The app validates the symbol before fetching the price and provides feedback to the user, such as error messages or a loading state.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Symbol Validation**: Validates the stock symbol before making any API calls.
+- **Fetch Stock Price**: Retrieves the current price of the stock symbol entered by the user.
+- **Error Handling**: Displays appropriate error messages if the symbol is invalid or if there are issues fetching the data.
+- **Loading State**: Shows a loading message while fetching data from the API.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: For building the user interface.
+- **TypeScript**: Provides type safety and better development experience.
+- **Axios**: For making HTTP requests to the stock price API.
+- **Finnhub API**: Used to validate stock symbols and fetch the current stock price.
+- **CSS**: For styling the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ensure that you have the following installed:
 
-### `npm run build`
+- **Node.js** (v12 or above)
+- **npm** (v6 or above)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git@github.com:KennethicEnergy/stock-price-checker.git
+   cd stock-price-checker```
 
-### `npm run eject`
+2. Install the dependencies:
+  ```bash
+  npm install```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Create a .env file in the root directory and add your Finnhub API key
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Running the Application
+  ```bash
+  npm start```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Usage
+  1. Enter a valid stock symbol (e.g., AAPL, TSLA) in the input field.
+  2. Click the "Get Price" button.
+  3. The app will validate the symbol and then fetch and display the current stock price.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Project Structure
+  - **src/**: Contains all the source code.
+    - **App.tsx**: The main component of the application.
+    - **api.ts**: Contains the functions for validating symbols and fetching stock prices.
+    - **types.ts**: TypeScript interfaces and types used in the application.
+    - **index.css**: Styling for the application.
 
-## Learn More
+# API Integration
+  This application uses the Finnhub API to:
+    - Validate Stock Symbols: The app checks if the symbol entered by the user is valid.
+    - Fetch Stock Prices: The app retrieves the current stock price for the valid symbol.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Error Handling
+  - If the user does not enter a symbol, an error message "Please enter a stock symbol" is displayed.
+  - If the entered symbol is invalid, an error message "Invalid stock symbol" is shown.
+  - If there are any other issues (e.g., network errors), a generic error message "An error occurred" is displayed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Styling
+  - The app uses basic CSS for styling.
+  - Errors are highlighted by applying a red border around the input field.
+  - The **Loading...** message is shown while the app is fetching data from the API.
 
-### Code Splitting
+# Contributing
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# License
+This project is licensed under the MIT License. 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
