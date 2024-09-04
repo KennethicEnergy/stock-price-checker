@@ -54,7 +54,7 @@ Ensure that you have the following installed:
 
 # Project Structure
   - `src/`: Contains all the source code.
-    - App.tsx`: The main component of the application.
+    - `App.tsx`: The main component of the application.
     - `api.ts`: Contains the functions for validating symbols and fetching stock prices.
     - `types.ts`: TypeScript interfaces and types used in the application.
     - `index.css`: Styling for the application.
