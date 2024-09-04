@@ -30,27 +30,30 @@ Ensure that you have the following installed:
 
 1. Clone the repository:
 
-   ```bash
+  ```bash
   git@github.com:KennethicEnergy/stock-price-checker.git
   cd stock-price-checker
   ```
+
 2. Install the dependencies:
   ```bash
   npm install
   ```
+
 3. Create a .env file in the root directory and add your Finnhub API key
 
 4. Running the Application
   ```bash
   npm start
   ```
+
 # Usage
   1. Enter a valid stock symbol (e.g., AAPL, TSLA) in the input field.
   2. Click the "Get Price" button.
   3. The app will validate the symbol and then fetch and display the current stock price.
 
 # Project Structure
-  - **src/**: Contains all the source code.
+  - `src/`: Contains all the source code.
     - **App.tsx**: The main component of the application.
     - **api.ts**: Contains the functions for validating symbols and fetching stock prices.
     - **types.ts**: TypeScript interfaces and types used in the application.
